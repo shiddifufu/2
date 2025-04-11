@@ -1,14 +1,14 @@
 # 1.代码部署
-<img src="https://github.com/cat1-a/cat/blob/master/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%BD%9C%E4%B8%9A3.4.png" width="800" >
+<img src="https://github.com/shiddifufu/2/blob/master/1.png" width="800" >
 
 # 2.优化特征选择方法
-<img src="https://github.com/cat1-a/cat/blob/master/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%BD%9C%E4%B8%9A3.4.png" width="800" >
+<img src="https://github.com/shiddifufu/2/blob/master/2.png" width="800" >
 
 # 3.样本平衡处理
-<img src="https://github.com/cat1-a/cat/blob/master/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%BD%9C%E4%B8%9A3.4.png" width="800" >
+<img src="https://github.com/shiddifufu/2/blob/master/3.png" width="800" >
 
 # 4.增强模型评估指标
-<img src="https://github.com/cat1-a/cat/blob/master/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%BD%9C%E4%B8%9A3.4.png" width="800" >
+<img src="https://github.com/shiddifufu/2/blob/master/4.png" width="800" >
 
 # 5.代码核心功能说明
 
