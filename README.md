@@ -66,8 +66,11 @@ N_y：类别y中所有词的总出现次数，
 
 如：
 import jieba
+
 text = "欢迎使用朴素贝叶斯分类器"
+
 words = jieba.lcut(text)  # 输出：['欢迎', '使用', '朴素', '贝叶斯', '分类器']
+
 2. 停用词过滤
 
 实现逻辑：
@@ -75,8 +78,11 @@ words = jieba.lcut(text)  # 输出：['欢迎', '使用', '朴素', '贝叶斯',
 移除无实际语义的高频词（如“的”、“是”、“the”、“and”）。
 
 如：
+
 stopwords = set(['的', '是', '和', '在', ...])
+
 filtered_words = [word for word in words if word not in stopwords]
+
 3. 其他预处理
 小写转换：统一为小写（如 text.lower()）。
 
@@ -97,8 +103,11 @@ $$\mathbf{X}_{\mathrm{count}}^{(d)} = \left[ \mathrm{count}(w_1,d),\ \mathrm{cou
 使用 CountVectorizer 统计词频，并限制最大特征数。
 
 如：
+
 from sklearn.feature_extraction.text import CountVectorizer
+
 vectorizer = CountVectorizer(max_features=1000)
+
 X_count = vectorizer.fit_transform(corpus)
 2. TF-IDF特征加权
 
@@ -115,14 +124,19 @@ N：总文档数。
 使用 TfidfVectorizer 自动计算 TF-IDF 值。
 
 如:
+
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 vectorizer = TfidfVectorizer(max_features=1000)
+
 X_tfidf = vectorizer.fit_transform(corpus)
 
 3. 对比分析
+
 | 维度         | 高频词特征选择                    | TF-IDF特征加权                     |
 |--------------|----------------------------------|-----------------------------------|
 | **数学意义** | 仅反映词的出现频率                | 反映词在文档中的重要性             |
 | **计算复杂度** | 低（只需统计词频）               | 高（需计算逆文档频率）             |
 | **适用场景** | 简单分类任务                     | 需要区分关键词的复杂任务           |
 | **代码实现** | `CountVectorizer`               | `TfidfVectorizer`                |
+
